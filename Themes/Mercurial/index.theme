@@ -1,0 +1,14 @@
+[Desktop Entry]
+Name=Mercurial
+Type=X-GNOME-Metatheme
+Comment=Favorite theme of Mercurial.
+
+[X-GNOME-Metatheme]
+GtkTheme=Clearlooks
+MetacityTheme=TraditionalOk
+IconTheme=gnome
+GtkColorScheme=base_color:#ffffff,fg_color:#000000,tooltip_fg_color:#000000,selected_bg_color:#86ABD9,selected_fg_color:#ffffff,text_color:#1A1A1A,bg_color:#EDECEB,tooltip_bg_color:#F5F5B5
+CursorTheme=Adwaita
+CursorSize=24
+NotificationTheme=slider
+BackgroundImage=./painting-ivan-aivazovsky-sea.jpg
