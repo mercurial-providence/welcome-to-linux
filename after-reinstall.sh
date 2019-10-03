@@ -37,9 +37,16 @@ echo -e "\n ${BCyan}2.2 Installing important applications${Color_Off} \n"
 apt -y install vim compton timeshift redshift redshift-gtk apt-xapian-index gparted ntfs-3g shotwell vlc vlc-plugin-bittorrent libav-tools terminator caja-open-terminal htop usbutils tree qbittorrent locate p7zip p7zip-full unrar-free unzip git 
 
 #(OPTIONAL) 
-apt -y install texmaker
+apt -y install texmaker #devscripts build-essential software-properties-common
 
 echo -e "\n ${BGreen}3. Installing Printer Stuff${Color_Off} \n"
 apt install hplip hplip-data hplip-doc hpijs-ppds hplip-gui  printer-driver-hpcups printer-driver-hpijs printer-driver-pxljr
 
 echo -e "\n ${BGreen} All Set! Thank you.${Color_Off}\n"
+
+echo -e "\n${BCyan}"
+echo -e "\n Currently I am not able to take following step : "
+echo -e "\n 1. Installing Google Chrome."
+echo -e "\n 2. Installing Mercurial theme."
+echo -e "${Color_Off}\n"
+
