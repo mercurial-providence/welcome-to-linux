@@ -1,6 +1,14 @@
 #	In case of listing the sub-directories of some directory in order of decreasing size.
 
+# Gives summary and fast
+sudo du -sh /* | sort -h
+# Complete data
 sudo du -h --max-depth=1 /some/directory | sort -hr
+
+#   r for readonly
+#   x for only stay in current filesystem, dont read mounted volumes of another filesystem   
+sudo ncdu -rx /
+
 
 #	If you want the contents of folders A and B to be the same, put /home/user/A/ (with the slash) as the source. 
 #	This takes not the folder A but all of it's content and puts it into folder B. Like this:
