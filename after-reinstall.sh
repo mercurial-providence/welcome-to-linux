@@ -40,10 +40,10 @@ apt -y install firmware-linux-nonfree firmware-realtek firmware-misc-nonfree fir
 
 echo -e "\n ${BCyan}2.2 Installing important applications${Color_Off} \n"
 
-apt -y install vim compton timeshift redshift redshift-gtk apt-xapian-index gparted ntfs-3g shotwell vlc vlc-plugin-bittorrent libav-tools terminator caja-open-terminal htop usbutils tree qbittorrent locate p7zip p7zip-full unrar-free unzip git ncdu gnuplot mc
+apt -y install vim compton timeshift redshift redshift-gtk synaptic apt-xapian-index gparted ntfs-3g shotwell vlc vlc-plugin-bittorrent libav-tools terminator caja-open-terminal htop usbutils tree qbittorrent locate p7zip p7zip-full unrar-free unzip git ncdu gnuplot mc neofetch 
 
 #(OPTIONAL) 
-apt -y install texmaker mate-desktop-environment-extras #devscripts build-essential software-properties-common
+apt -y install texmaker mate-desktop-environment-extras devscripts build-essential software-properties-common
 
 echo -e "\n ${BGreen}3. Installing Printer Stuff${Color_Off} \n"
 #apt -y install hplip hplip-data hplip-doc hpijs-ppds hplip-gui  printer-driver-hpcups printer-driver-hpijs printer-driver-pxljr

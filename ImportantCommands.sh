@@ -50,3 +50,44 @@ wget --retry-connrefused --waitretry=1 --read-timeout=20 --timeout=15 -t 0 -o lo
 #   Delete all the HTML files from a folder
 find . -type f -iname "*.html" -delete
 
+
+#       systemctl
+#       This manages the system services.
+        Example service:    bluetooth.service
+
+        Start and Stop the service
+        systemctl start bluetooth.service
+        systemctl stop bluetooth.service
+        systemctl restart bluetooth.service
+
+
+        Enable and Disable the service at startup 
+        systemctl enable bluetooth.service
+        systemctl disable bluetooth.service
+
+        Mask and Unmask the service (to mask is to destroy completely without uninstalling)
+        systemctl mask bluetooth.service
+        systemctl unmask bluetooth.service
+
+        Check the status of the service
+        systemctl status bluetooth.service
+
+
+        See a list of all services
+        systemctl list-unit-files --type=service
+
+
+
+# Rename the extension with correct one of all the (jpg, png) files recursively
+
+#!/bin/bash
+shopt -s globstar
+for f in **/*jpg **/*png; do 
+    type=$(file -0 -F" " "$f" | grep -aPo '\0\s*\K\S+') 
+    mv "$f" "${f%%.*}.${type,,}"  
+done
+
+
+# Recover after harddrive failure
+
+https://serverfault.com/questions/987319/recover-harddrive-after-abruptly-power-cut
